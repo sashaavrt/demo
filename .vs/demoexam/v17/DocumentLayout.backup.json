@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\models\\averinaacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\models\\averinaacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\changepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\changepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\changepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|c:\\users\\averina.a.a\\source\\repos\\demoexam\\demoexam\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A0F5AA-8520-4938-A775-D1A6FBDD12F6}|demoexam\\demoexam.csproj|solutionrelative:demoexam\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\Models\\User.cs",
+              "RelativeDocumentMoniker": "demoexam\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\Models\\User.cs",
+              "RelativeToolTip": "demoexam\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T07:35:34.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "demoexam\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\MainWindow.xaml.cs",
+              "RelativeToolTip": "demoexam\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAArwCoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T07:28:59.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "demoexam\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\MainWindow.xaml*",
+              "RelativeToolTip": "demoexam\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-03T08:13:03.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AverinaAContext.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\Models\\AverinaAContext.cs",
+              "RelativeDocumentMoniker": "demoexam\\Models\\AverinaAContext.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\Models\\AverinaAContext.cs",
+              "RelativeToolTip": "demoexam\\Models\\AverinaAContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T07:11:36.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChangePassword.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\ChangePassword.xaml.cs",
+              "RelativeDocumentMoniker": "demoexam\\ChangePassword.xaml.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\ChangePassword.xaml.cs",
+              "RelativeToolTip": "demoexam\\ChangePassword.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T07:04:06.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\App.xaml.cs",
+              "RelativeDocumentMoniker": "demoexam\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\App.xaml.cs",
+              "RelativeToolTip": "demoexam\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:46:52.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "demoexam\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "demoexam\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:46:28.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChangePassword.xaml",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\ChangePassword.xaml",
+              "RelativeDocumentMoniker": "demoexam\\ChangePassword.xaml",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\ChangePassword.xaml",
+              "RelativeToolTip": "demoexam\\ChangePassword.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T09:14:33.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "demoexam\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\Averina.A.A\\source\\repos\\demoexam\\demoexam\\AdminWindow.xaml",
+              "RelativeToolTip": "demoexam\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T09:11:58.077Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
