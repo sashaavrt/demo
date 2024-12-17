@@ -11,6 +11,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using demoexam.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
 namespace demoexam
 {
@@ -46,6 +47,7 @@ namespace demoexam
                 if (user != null)
                 {
                     MessageBox.Show("Вы успешно авторизовались!");
+
                 }
                 else
                 {

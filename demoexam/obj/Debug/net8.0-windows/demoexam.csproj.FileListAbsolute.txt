@@ -148,3 +148,4 @@ C:\Users\Averina.A.A\source\repos\demoexam\demoexam\bin\Debug\net8.0-windows\run
 C:\Users\Averina.A.A\source\repos\demoexam\demoexam\obj\Debug\net8.0-windows\AdminWindow.baml
 C:\Users\Averina.A.A\source\repos\demoexam\demoexam\obj\Debug\net8.0-windows\ChangePassword.baml
 C:\Users\Averina.A.A\source\repos\demoexam\demoexam\obj\Debug\net8.0-windows\demoexam.csproj.Up2Date
+C:\Users\Averina.A.A\source\repos\demoexam\demoexam\obj\Debug\net8.0-windows\demoexam.sourcelink.json
