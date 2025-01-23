@@ -17,5 +17,9 @@ public partial class Bill
 
     public string? Sum { get; set; }
 
-    public int? UserId { get; set; }
+    public virtual Guest? Guest { get; set; }
+
+    public virtual Rent? Rent { get; set; }
+
+    public virtual Service? Service { get; set; }
 }

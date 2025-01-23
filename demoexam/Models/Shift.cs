@@ -12,4 +12,6 @@ public partial class Shift
     public DateOnly? Date { get; set; }
 
     public string? Cleaner { get; set; }
+
+    public virtual Room? Room { get; set; }
 }

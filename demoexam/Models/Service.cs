@@ -12,4 +12,6 @@ public partial class Service
     public string? Price { get; set; }
 
     public string? Description { get; set; }
+
+    public virtual ICollection<Bill> Bills { get; set; } = new List<Bill>();
 }

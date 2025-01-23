@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demoexam"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="Администратор" MinHeight="350" MinWidth="550" SizeToContent="WidthAndHeight" ResizeMode="CanResize">
     <Window.Background>
         <SolidColorBrush Color="#C9D7B3"/>
@@ -17,11 +18,10 @@
             Margin="10,10,10,50"
             IsReadOnly="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="Auto"/>
-                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="Auto"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="Auto"/>
                 <DataGridTextColumn Header="Роль" Binding="{Binding Role}" Width="Auto"/>
-                <DataGridTextColumn Header="Логин" Binding="{Binding Username}" Width="Auto"/>
-                <DataGridComboBoxColumn Header="Статус" SelectedItemBinding="{Binding Status}" Width="Auto"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="Auto"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding IsLocked}" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel  HorizontalAlignment="Center" Margin="0,300,0,0">

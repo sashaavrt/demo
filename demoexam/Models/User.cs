@@ -14,4 +14,12 @@ public partial class User
     public string? Email { get; set; }
 
     public string? Password { get; set; }
+
+    public bool IsFirstLogin { get; set; }
+
+    public int FalledLoginAttempts { get; set; }
+
+    public bool IsLocked { get; set; }
+
+    public DateTime? LastLoginDate { get; set; }
 }

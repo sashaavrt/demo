@@ -1,4 +1,5 @@
-﻿using System;
+﻿using demoexam.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,18 @@ namespace demoexam
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            using (var context = new AverinaAContext())
+            {
+                var query =
+                from user in context.Users
+                //where product.Color == "Red"
+                orderby user.Id
+                select new { user.Name, user.Role, user.Email, user.IsLocked };
+                Users.ItemsSource = query.ToList();
+            }
         }
     }
 }

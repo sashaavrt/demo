@@ -1,4 +1,5 @@
 ﻿using demoexam.Models;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,43 +22,60 @@ namespace demoexam
     /// </summary>
     public partial class ChangePassword : Window
     {
-        public ChangePassword()
+        private readonly int _userId;
+        public ChangePassword(int userId)
         {
             InitializeComponent();
             _userId = userId;
-            private void BtnChangePassword_Click(object sender, RoutedEventArgs e)
-            string currentPassword txtCurrentPassword.Password;
-            string newPassword txthemPassword Password;
-        string confirwNewPassword txtConfirm Password Password;
-// Проверка на лустие поля
+
+        }
+        private void BtnChangePassword_Click(object sender, RoutedEventArgs e)
+        {
+            string currentPassword = CurrentPawword.Password;
+            string newPassword = NewPassword.Password;
+            string confirwNewPassword = CheckPassword.Password;
+            // Проверка на лустие поля
             if (string.IsNullOrWhiteSpace(currentPassword) ||
-            string.IsNullOrihiteSpace(nesPassword) ||
-            string. Iskill0rihiteSpace(confirmNewPassword)) {
-                Messagellox.Show("Все поля обязательны для заполнения", паре "Ошибка", MessageBoxButton.OK, MessageBox Image Error);
+            string.IsNullOrWhiteSpace(newPassword) ||
+            string.IsNullOrWhiteSpace(confirwNewPassword))
+            {
+                MessageBox.Show("Все поля обязательны для заполнения", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            if (newPassword confirsNewPassword) {
-                Messagellox.Show("Новый пароль и подтверждение не совпадает", заран "Омибка", MessagelloxButton.OK, MessageBox Image Error);
+            if (newPassword != confirwNewPassword)
+            {
+                MessageBox.Show("Новый пароль и подтверждение не совпадает", "Омибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            try
+            {
+                using (var context = new AverinaAContext())
+                {
+                    var user = context.Users.FirstOrDefault(u => u.Id == _userId);
+                    if (user == null)
+                    {
+                        MessageBox.Show("Пользователь не найден.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+
+                    if (user.Password != currentPassword)
+                    {
+                        // Проверка текущего пароля
+                        MessageBox.Show("Текущий пароль неверен", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+                    user.Password = newPassword;
+                    user.IsFirstLogin = false;
+                    context.SaveChanges();
+                    MessageBox.Show("Пароль успешно изменен", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при изменении пароля: (ех. Message)", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-        try { }
-var Umet user context Users FirstOrDefault(u.Id userId);
-if (user nall)
-NessageBox.Show(анибетист "Пользователь не найден.", за "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-return;
-
-user.Password newPassword;
-
- if (user.Password currentPassword)
-// Проверка текущего пароля
-MessageBox.Show("Текущий пароль неверен", зар "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-return;
-user.IsFirstlogin = false;
-context SaveChanges();
-        MessageBox.Show("Пароль успешно изменен", оці "Успех", RessageBoxButton.OK, MessageBoxImage.Information);
-this.Close();
-catch (Exception ex)
-Messagebox.Show("Ошибка при изменении пароля: (ех. Message)", "Ошибка", MessageBoxButton.OK, MessageBoxImage Error);
-    }
     }
 }

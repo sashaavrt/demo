@@ -14,4 +14,10 @@ public partial class Room
     public string? Category { get; set; }
 
     public string? Status { get; set; }
+
+    public virtual ICollection<Rent> Rents { get; set; } = new List<Rent>();
+
+    public virtual ICollection<RoomAccess> RoomAccesses { get; set; } = new List<RoomAccess>();
+
+    public virtual ICollection<Shift> Shifts { get; set; } = new List<Shift>();
 }

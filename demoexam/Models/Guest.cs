@@ -20,4 +20,10 @@ public partial class Guest
     public string? Email { get; set; }
 
     public string? Passport { get; set; }
+
+    public virtual ICollection<Bill> Bills { get; set; } = new List<Bill>();
+
+    public virtual ICollection<Rent> Rents { get; set; } = new List<Rent>();
+
+    public virtual ICollection<RoomAccess> RoomAccesses { get; set; } = new List<RoomAccess>();
 }
