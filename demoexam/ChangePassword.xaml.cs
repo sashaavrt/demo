@@ -29,7 +29,7 @@ namespace demoexam
             _userId = userId;
 
         }
-        private void BtnChangePassword_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             string currentPassword = CurrentPawword.Password;
             string newPassword = NewPassword.Password;
@@ -74,8 +74,10 @@ namespace demoexam
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при изменении пароля: (ех. Message)", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при изменении пароля: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+      
     }
 }

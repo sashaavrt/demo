@@ -35,11 +35,12 @@ namespace demoexam
             {
                 var query =
                 from user in context.Users
-                //where product.Color == "Red"
                 orderby user.Id
-                select new { user.Name, user.Role, user.Email, user.IsLocked };
+                select new { user.Name, user.Role, user.Email, user.IsLocked, user.IsFirstLogin, user.Password, user.FalledLoginAttempts, user.LastLoginDate};
                 Users.ItemsSource = query.ToList();
             }
         }
+
+       
     }
 }
