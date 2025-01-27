@@ -1,4 +1,6 @@
 ﻿using demoexam.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,24 +25,77 @@ namespace demoexam
         public AdminWindow()
         {
             InitializeComponent();
+            LoadUsers();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void LoadUsers()
         {
             using (var context = new AverinaAContext())
             {
-                var query =
-                from user in context.Users
-                orderby user.Id
-                select new { user.Name, user.Role, user.Email, user.IsLocked, user.IsFirstLogin, user.Password, user.FalledLoginAttempts, user.LastLoginDate};
-                Users.ItemsSource = query.ToList();
+                var users = await context.Users.ToListAsync();
+                Users.ItemsSource = users;
+            }
+        }
+        private async void AddUser_Click(object sender, RoutedEventArgs e)
+        {
+            var newUserWindow = new AddUserWindow();
+            if (newUserWindow.ShowDialog() == true)
+            {
+                var newUser = newUserWindow.newUser;
+                using (var context = new AverinaAContext())
+                {
+                    if (await context.Users.AnyAsync(u => u.Name == newUser.Name))
+                    {
+                        MessageBox.Show("Пользователь с таким логином уже существует.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                    else
+                    {
+                        context.Users.Add(newUser);
+                        await context.SaveChangesAsync();
+                        LoadUsers();
+                        MessageBox.Show("Пользователь успешно добавлен.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
             }
         }
 
-       
+        // Разблокировка пользователя
+        private async void UnlockUser_Click(object sender, RoutedEventArgs e)
+        {
+            if (Users.SelectedItem is User selectedUser)
+            {
+                using (var context = new AverinaAContext())
+                {
+                    var user = await context.Users.FindAsync(selectedUser.Id);
+                    if (user != null)
+                    {
+                        user.IsLocked = false;
+                        user.LastLoginDate = null;
+                        await context.SaveChangesAsync();
+                        LoadUsers();
+                        MessageBox.Show("Пользователь разблокирован.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите пользователя для разблокировки.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        // Сохранение изменений данных пользователей
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Users.ItemsSource is List<User> users)
+            {
+                using (var context = new AverinaAContext())
+                {
+                    context.UpdateRange(users);
+                    await context.SaveChangesAsync();
+                    LoadUsers();
+                    MessageBox.Show("Изменения сохранены.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+        }
     }
 }

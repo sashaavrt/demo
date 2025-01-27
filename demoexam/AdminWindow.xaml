@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demoexam"
         mc:Ignorable="d"
-        Loaded="Window_Loaded"
+       
         Title="Администратор" MinHeight="350" MinWidth="550" SizeToContent="WidthAndHeight" ResizeMode="CanResize">
     <Window.Background>
         <SolidColorBrush Color="#C9D7B3"/>
@@ -14,7 +14,8 @@
         <DataGrid
             x:Name="Users"
             AutoGenerateColumns="False"
-            CanUserAddRows="True"
+            CanUserAddRows="False"
+            SelectionMode="Single"
             CanUserDeleteRows="True"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
@@ -44,6 +45,17 @@
               BorderThickness="0"
               Cursor="Hand"
               Margin="0 10 0 0" Click="Button_Click"/>
+            <Button
+  Content="Добавить"
+  Width="150"
+  Height="35"
+  Background="#5D3F57"
+  Foreground="#D7E7BF"
+  FontFamily="Cascadia Code"
+  FontSize="15"
+  BorderThickness="0"
+  Cursor="Hand"
+  Margin="0 10 0 0" Click="AddUser_Click"/>
         </StackPanel>
     </StackPanel>
 </Window>

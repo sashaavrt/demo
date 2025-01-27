@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Averina.A.A\source\repos\demoexam\demoexam\App.xaml
-3-97283989
+41224253744
 
-19-2127806976
+20-2087261934
 2281560456616
-AdminWindow.xaml;ChangePassword.xaml;MainWindow.xaml;
+AddUserWindow.xaml;AdminWindow.xaml;ChangePassword.xaml;MainWindow.xaml;
 
-True
+False
 

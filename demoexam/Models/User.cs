@@ -22,4 +22,5 @@ public partial class User
     public bool IsLocked { get; set; }
 
     public DateTime? LastLoginDate { get; set; }
+    
 }
